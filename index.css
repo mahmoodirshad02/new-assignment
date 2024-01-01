@@ -1,0 +1,312 @@
+/* Basic styling for the header and sidebar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  /* Styling for login and signup buttons */
+  .login,
+  .signup {
+    padding: 8px 12px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  
+  .login:hover,
+  .signup:hover {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* banner slider*/
+
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/cu.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* content */
+  .content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+    text-align: center;
+    color: #fff;
+
+  }
+  content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+
+  }
+  
+  .content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+
+  }
+
+  /* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif ;
+   }
+
+   .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   }
+   .contaner {
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 100px;
+
+   }
+   .contaner .card {
+    width: 310px;
+    height: 490px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0. 2);
+   }
+
+   .contaner .card img {
+    width: 310px;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+
+   }
+   .contaner .card h3 {
+    text-align: center;
+    margin: 8px 0 ;
+    
+   }
+   .contaner .card p {
+    text-align: center;
+    line-height: 23px;
+    margin:  0 10px ;
+
+   }
+
+   .contaner .card button {
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50 , 0);
+    padding: 8px 20px;
+    background-color: yellow;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+   }
+
+   
+   
+
+   .img {
+    width: 190px;
+
+   }
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+h1 {
+/* Example styles for the h1 element */
+
+  font-family: Arial, sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #333; /* Change color as desired */
+  margin: 20px 0; /* Adjust margin as needed */
+  word-wrap: break-word; /* Allow words to break and wrap onto the next line */
+}
+
+/* Example styles for the p element */
+p {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333; /* Change color as desired */
+  margin: 10px 0; /* Adjust margin as needed */
+}
+
+/* Example styles for the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
